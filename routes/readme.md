@@ -20,3 +20,6 @@
 
 10. **Write the added feature in `feature.md` and put a ✅ beside it.**  
              Example: if the added feature is payment, then `payment feature✅`
+
+
+# everybody write their updates or issues in their ".md" files only.
