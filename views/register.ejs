@@ -1,0 +1,21 @@
+<% include ./header.ejs %>
+
+ 
+<div class="main">
+    <div class="login-box bg-green-300">
+  <h1>Create New Account</h1>
+  <form action="/register" method="post">
+    <input type="text" name="fullname" placeholder="Full name" class=" block w-full px-3 py-2">
+    <input type="text" name="username" placeholder="username" class=" block w-full px-3 py-2">
+    <input type="password" name="password" placeholder="password" class=" block w-full px-3 py-2">
+    <input type="email" name="email" placeholder="email" class=" block w-full px-3 py-2">
+    <input type="number" name="Contact" placeholder="Contact" class=" block w-full px-3 py-2">
+    <input type="submit" class="block w-full bg-red-600 px-3 py-2 text-white submit">
+  </form>
+  <a href="/">login to existing account</a>
+    </div>
+  </div>
+
+
+
+<% include ./footer.ejs %>

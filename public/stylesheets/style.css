@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: rgb(0, 0, 0)
+}
+*::selection{
+    color: rgb(0, 209, 0);
+    background-color: black;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: unset;
+  justify-content: center;
+}
+.login-box{
+    height: 67vh;
+    width: 50vh;
+    background-color: rgb(166, 117, 117);
+    padding: 3px;display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+width: 80%;
+height: 90%;
+}
+form input{
+    display: block;
+    margin-top: 5px;
+    height: 4vh;
+    width: 70%;
+    border-radius: 50px;
+}
+.login-box h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.login-box .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
