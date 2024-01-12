@@ -12,7 +12,7 @@ passport.use(new localStratergy(userModel.authenticate()));
 
 
 router.get('/', function(req, res, next) {
-  res.render('index',{nav:false});
+  res.render('index',{nav:true});
 });
 
 router.get('/add',isLoggedIn, async function(req, res, next) {

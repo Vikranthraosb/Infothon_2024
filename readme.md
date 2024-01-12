@@ -13,7 +13,7 @@
 7. **To run it, use:**
              npx nodemon
 
-8. **It runs on port 8000**  
+8. **It runs on port 9000**  
              (you can change it by going to `bin/www`, line no 15 as of now)_
 
 9. **After updating/adding a new feature, commit to your repository and send me a pull request.**

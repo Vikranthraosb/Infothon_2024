@@ -1,16 +1,555 @@
+<% include ./header2.ejs %>
+<link rel="stylesheet" href="/stylesheets/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <div class="hide">
+    <div class="main">
+      <div class="login-box">
+    <h1>Welcome to Pintrest part-2</h1>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="username" class=" block w-full px-3 py-2">
+      <input type="password" name="password" placeholder="password" class=" block w-full px-3 py-2">
+      <input type="submit" class="block w-full bg-red-600 px-3 py-2 text-white submit">
+    </form>
+    <a href="/register">Dont have an account ?</a>
+      </div>
+    </div>
+  </div>
+        <!-- login ends from here -->
+        <button class="chatbot-toggler">
+          <span class="material-symbols-rounded">mode_comment</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot">
+          <header>
+            <p>Hi there 👋<br>How can I help you today?</p>
+            <span class="close-btn material-symbols-outlined">close</span>
+          </header>
+         
+          <div id="chatbox"></div>
+  <div>
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendButton">Send</button>
+  </div>
+        </div>
+<div class="contents">
+ 
 
-  <% include ./header.ejs %>
+<div class="hero">
+<img src="/images/bggif2.gif" alt="">
+<h1 style="color: white; font-size: 4vw; font-weight: bold;">contents</h1>
+</div>
 
-  <div class="main">
-    <div class="login-box">
-  <h1>Welcome to Pintrest</h1>
-  <form action="/login" method="post">
-    <input type="text" name="username" placeholder="username" class=" block w-full px-3 py-2">
-    <input type="password" name="password" placeholder="password" class=" block w-full px-3 py-2">
-    <input type="submit" class="block w-full bg-red-600 px-3 py-2 text-white submit">
-  </form>
-  <a href="/register">Dont have an account ?</a>
+<div id="scroller">
+  <div id="scroller-in">
+    <h4>SAFE</h4>
+    <h4>SECURE</h4>
+    <h4>RELIABLE</h4>
+    <h4>TRUST</h4>
+  </div>
+  <div id="scroller-in">
+    <h4>SAFE</h4>
+    <h4>SECURE</h4>
+    <h4>RELIABLE</h4>
+    <h4>TRUST</h4>
+  </div>
+</div>
+<div class="cards">
+  <h1>WHO IS THIS PLATFORM FOR?</h1>
+<div class="card">
+  <div class="front">
+    <div class="frontimg">
+      <!-- <img src="/images/cardGlobe.png" alt=""> -->
+    </div>
+    <div class="fronttext">
+      </p>
+    </div>
+    
+    <div class="know-more">
+      <button>Know More</button>
+    </div>
+  </div>
+  <div class="back">
+    
+    <div class="know-more">
+      <button>Go Back</button>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="front">
+    <div class="frontimg">
+      <!-- <img src="/images/security.png" alt=""> -->
+    </div>
+    <div class="fronttext">
+      <h3></h3>
+    </div>
+    
+    <div class="know-more">
+      <button>Know More</button>
+    </div>
+  </div>
+  <div class="back">
+    
+    <div class="know-more">
+      <button>Go Back</button>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="front">
+    <div class="frontimg">
+      <!-- <img src="/images/card-3.png" alt=""> -->
+
+    </div>
+    <div class="fronttext">
+    </div>
+    
+    <div class="know-more">
+      <button>Know More</button>
+    </div>
+  </div>
+  <div class="back">
+
+    <div class="know-more">
+      <button>Go Back</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="growth">
+  <div class="growthleft">
+    <!-- <div class="cursor">    
+    </div> -->
+  </div>
+  <div class="growthright">
+ </div>
+</div>
+<div class="future">
+  <!-- <video src="/videos/back.mp4" autoplay muted loop></video> -->
+  <div class="ftext">   
+           <h1>DO YOUR WAY !</h1>
+<button>Hello</button>        </div>
+ </div>
+ 
+ <div class="faq-section">
+  <div class="faq-item">
+    <input type="checkbox" id="faq1">
+    <label for="faq1" class="faq-question">Why is inclusive hiring important in both public and private sectors?</label>
+    <div class="faq-answer">
+      Inclusive hiring promotes diversity, equality, and ensures a representative workforce that reflects the broader community.
     </div>
   </div>
 
-  <% include ./footer.ejs %>
+  <div class="faq-item">
+    <input type="checkbox" id="faq2">
+    <label for="faq2" class="faq-question">How does data-driven hiring contribute to inclusivity in the public and private sectors?</label>
+    <div class="faq-answer">
+      Data-driven hiring relies on objective metrics, reducing bias and facilitating fair assessment, fostering inclusivity.
+    </div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id="faq3">
+    <label for="faq3" class="faq-question">What role do government exam results play in the hiring process for inclusive practices?</label>
+    <div class="faq-answer">
+      Government exam results provide standardized and objective criteria, serving as a valuable measure for merit-based selections, enhancing inclusivity.
+    </div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id="faq4">
+    <label for="faq4" class="faq-question">How can organizations ensure they incorporate data-driven government exam results in their hiring processes?</label>
+    <div class="faq-answer">
+      Organizations can integrate government exam data by designing recruitment systems that prioritize objective metrics, ensuring a more inclusive and equitable hiring process.
+    </div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id="faq5">
+    <label for="faq5" class="faq-question">What benefits can be expected from adopting data-driven approaches in hiring?</label>
+    <div class="faq-answer">
+      Adopting data-driven approaches enhances transparency, reduces bias, and leads to the selection of candidates based on merit, fostering a more inclusive work environment.
+    </div>
+  </div>
+  
+
+</div>
+
+<footer>
+  <div class="prefooter">
+    <ul>
+        <P>Get to know Us</P>
+        <A>Career</A>
+        <A>Blog</A>
+        <A>Investor Relations</A>
+        <A>Amazon devices</A>
+        <A>Amazon</A>
+    </ul>
+    <ul>
+        <P>Get to know Us</P>
+        <A>Career</A>
+        <A>Blog</A>
+        <A>Investor Relations</A>
+        <A>Amazon devices</A>
+        <A>Amazon</A>
+    </ul>
+    <ul>
+        <P>Get to know Us</P>
+        <A>Career</A>
+        <A>Blog</A>
+        <A>Investor Relations</A>
+        <A>Amazon devices</A>
+        <A>Amazon</A>
+    </ul>
+    <ul>
+        <P>Get to know Us</P>
+        <A>Career</A>
+        <A>Blog</A>
+        <A>Investor Relations</A>
+        <A>Amazon devices</A>
+        <A>Amazon</A>
+    </ul>
+  </div>
+  
+  
+  <div class="footer">
+    <p>&copy; 2023 Event Registration System. All rights reserved.</p>
+    <div class="social-media">
+        <a href="#" class="social-icon"><img src="facebook.webp" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="linkdin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+<style>
+  /* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.chatbot-toggler {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  z-index: 100;
+  justify-content: center;
+  border-radius: 50%;
+  background: #724ae8;
+  transition: all 0.2s ease;
+}
+body.show-chatbot .chatbot-toggler {
+  transform: rotate(90deg);
+}
+.chatbot-toggler span {
+  color: #fff;
+  position: absolute;
+}
+.chatbot-toggler span:last-child,
+body.show-chatbot .chatbot-toggler span:first-child  {
+  opacity: 0;
+}
+body.show-chatbot .chatbot-toggler span:last-child {
+  opacity: 1;
+}
+.chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  height: 70vh;
+  width: 330px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: bottom right;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.2),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+}
+body.show-chatbot .chatbot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.chatbot header {
+  padding: 16px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #724ae8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.chatbot header span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+header h2 {
+  font-size: 1.4rem;
+}
+.chatbot .chatbox {
+  overflow-y: auto;
+  height: 510px;
+  padding: 30px 20px 100px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 25px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.chatbox .chat {
+  display: flex;
+  list-style: none;
+}
+.chatbox .outgoing {
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+.chatbox .incoming span {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: #724ae8;
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+}
+.chatbox .chat p {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 75%;
+  color: #fff;
+  font-size: 0.95rem;
+  background: #724ae8;
+}
+.chatbox .incoming p {
+  border-radius: 10px 10px 10px 0;
+}
+.chatbox .chat p.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+.chatbox .incoming p {
+  color: #000;
+  background: #f2f2f2;
+}
+.chatbot .chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+}
+.chat-input textarea{
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
+  font-size: 0.95rem;
+}
+#span-btn{
+  display: flex;
+  align-self: flex-end;
+  color: #724ae8;
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  align-items: center;
+  border: 2px solid purple;
+  /* visibility: hidden; */
+  font-size: 1.45rem;
+}
+.chat-input textarea:valid ~ span {
+  visibility: visible;
+}
+.chat-input{
+  padding: 2vh;
+
+}
+
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 20px;
+  }
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 0;
+    width: 100%;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+    padding: 25px 15px 100px;
+  }
+  .chatbot .chat-input {
+    padding: 5px 15px;
+  }
+  .chatbot header span {
+    display: block;
+  }
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+var cus= document.querySelector(".cursor")
+var maindiv= document.querySelector(".growthleft")
+
+maindiv.addEventListener("mousemove",function(dets){
+    cus.style.left= dets.x + "px"
+    cus.style.top= dets.y + "px"
+
+}) 
+document.querySelector(".ftext button ").addEventListener("mouseover",function(){
+gsap.to(".future video",{
+    opacity:1,
+    duration:1,
+    ease :Power2
+
+})
+  })
+  document.querySelector(".ftext button ").addEventListener("mouseleave",function(){
+    gsap.to(".future video",{
+        opacity:0,
+        duration:1,
+        ease:Power2
+    
+    })
+  })
+  window.addEventListener('scroll', function() {
+  var cardsSection = document.querySelector('.cards');
+  var header = document.querySelector('.header');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  var cardsSectionOffset = cardsSection.offsetTop;
+
+  if (scrollPosition > cardsSectionOffset) {
+    header.style.display = 'none';
+  } else {
+    header.style.display = 'flex';
+  }
+});
+// gsap and scroll trigger
+
+
+
+
+
+
+// chatbot
+var flag=1;
+const toggle = document.querySelector(".chatbot-toggler");
+const chatbot = document.querySelector(".chatbot");
+
+toggle.addEventListener("click", function () {
+  document.body.classList.toggle("show-chatbot");
+});
+const chatbox = document.getElementById("chatbox");
+    const userInput = document.getElementById("userInput");
+    const sendButton = document.getElementById("sendButton");
+
+    function appendMessage(sender, message) {
+      chatbox.innerHTML += `<strong>${sender}:</strong> ${message}<br>`;
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    function botResponse(query) {
+      const lowerQuery = query.toLowerCase();
+
+      if (lowerQuery.includes("hello") || lowerQuery.includes("hi")) {
+        return "Hello there! How can I assist you today?";
+      } else if (lowerQuery.includes("how are you")) {
+        return "I'm just a bot, but thanks for asking!";
+      } else if (lowerQuery.includes("information")) {
+        return "Sure, what information are you looking for?";
+      } else if (lowerQuery.includes("events")) {
+        return "Check Out the Event Section of Website!";
+      }else if (lowerQuery.includes("contact")) {
+        return "You can contact us at 9110230197 or mail us: s.ravichandran6102003@gmail.com";
+      } else if (lowerQuery.includes("bye")) {
+        return "Goodbye! Have a great day!";
+      } else if (lowerQuery.includes("registration")|| lowerQuery.includes("register")) {
+        return "Go to the Registration Section and provide your details. An email will be sent if your registration is confirmed!";
+      } else if (lowerQuery.includes("update")) {
+        return "If you need to update your registration information, please contact us at 9110230197 or email us at s.ravichandran6102003@gmail.com";
+      }else if (lowerQuery.includes("deadline")) {
+        return "Yes, the registration deadline is available in the Events Section. Make sure to register before the deadline.";
+      }else if (lowerQuery.includes("fee")||lowerQuery.includes("[payment")) {
+        return "Yes, there might be a registration fee for some events. Check the Events Section for details.If so scan the QR code pay and share the payment details by replying to the mail we had sent!";
+      }else if (lowerQuery.includes("cancellation")) {
+        return "Yes, there might be a registration fee for some events. Check the Events Section for details.";
+      }else if (lowerQuery.includes("thank you")) {
+        return "You're welcome! It was my pleasure to assist you.!";
+      }else if (lowerQuery.includes("team")) {
+        return "Mail our team at s.ravichandran6102003@gmail.com to form teams of your choice text the complete details of your team members!";
+      }
+      else if (lowerQuery.includes("bye")) {
+        return "Goodbye! Have a great day!";
+      } else {
+        return "I'm sorry, I don't understand that. Can you please rephrase? or Contact the team at  9110230197 / mail us: s.ravichandran6102003@gmail.com";
+      }
+    }
+
+    function processUserInput() {
+      const message = userInput.value.trim();
+      if (message !== "") {
+        appendMessage("You", message);
+        userInput.value = "";
+
+        const botReply = botResponse(message);
+        setTimeout(() => appendMessage("Chatbot", botReply), 500);
+      }
+    }
+
+    sendButton.addEventListener("click", processUserInput);
+
+    userInput.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+        processUserInput();
+      }
+    });
+
+
+</script>
+</html>
+<% include ./footer.ejs %>
