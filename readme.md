@@ -22,4 +22,4 @@
              Example: if the added feature is payment, then `payment feature✅`
 
 
-# everybody write their updates or issues in their ".md" files only.
+# everybody write their updates or issues in their respective ".md" files only.
